@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+/* loading */
+
+#main_loader{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-family: 'Fredoka One', cursive;
+    
+}
+
+.in_loader{
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    
+}
+
+.rott{
+    width: 15rem;
+    height: 15rem;
+    position: absolute ;
+    border-right: 0.3rem solid rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: rot 2s linear infinite;
+}
+
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+   
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.main{
+    background: url("../media/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Game board */
+#board{
+    background-color: azure;
+    width: 700px;
+    height: 600px;
+    opacity: 0.8;
+    border: 8px solid rgb(12, 8, 7);
+    margin-top: -50px;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    
+}
+
+#scoreBox{
+    position: absolute;
+    top: 200px;
+    right: 1150px;
+    font-size: 42px;
+    /* font-weight: bold; */
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-family: 'New Tegomin', serif;
+}
+
+
+
+/* design of head of Snake */
+.head{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Snake's Body */
+.snake{
+    background-color:rgb(190, 22, 22);
+    border-radius: 15px;    
+}
+
+
+/* Food design */
+.food{
+    background-color:rgb(118, 25, 180);
+    border-radius: 12px;
+  
+}
+
+
+#foot{
+    position: absolute;
+    top: 650px;
+    right: 1250px;
+    font-size: 29px;
+    font-weight: bold;
+    color: rgb(0, 255, 0);
+    font-family: 'New Tegomin', serif;
+    
+}
+

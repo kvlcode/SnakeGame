@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>SNAKE</title>
+</head>
+
+<body onload="loadfun()">
+
+    <script src="js/index.js"></script>
+
+    <div class="main">
+
+        <div id="scoreBox">Score: 0</div>
+
+        <div id="board"> </div>
+
+        <p id="foot">Developed by <a style="text-decoration: none; color: aliceblue;"
+                href="https://www.linkedin.com/in/kaval-prajapati-0b4817210">KAVAL</a></p>
+
+    </div>
+
+    <!-- Loading -->
+
+    <div id="main_loader">
+        <div class="in_loader">
+            <div class="rott"></div>
+            <h1>Loading</h1>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        var preload = document.getElementById('main_loader');
+        function loadfun() {
+            preload.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
